@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: GestureDetector(
             child: Container(
               alignment: Alignment.center,
-              color: Colors.blue,
+              color: Colors.lightGreen,
               width: 200.0,
               height: 100.0,
               child: Text(
@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             onTap: () => updateText("Tap"),
             onDoubleTap: () => updateText("DoubleTap"),
-            onLongPress: () => updateText("LongPress"), 
+            onLongPress: () => updateText("LongPress"),
           ),
         ),
       ),
@@ -62,7 +62,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void updateText(String text) {
-    //更新显示的事件名
     setState(() {
       _operation = text;
     });
